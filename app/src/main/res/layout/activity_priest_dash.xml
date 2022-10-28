@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.simon.PriestDashboard.PriestDashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Pst. KimKim"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/ic_menu"
+                android:background="@color/orange"
+                app:navigationIconTint="@color/white"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar_layout">
+
+        </FrameLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:fab_addButtonColorNormal="@color/orange"
+            app:fab_addButtonColorPressed="@color/white"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/FloatStyle"
+            app:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.AddFloatingActionButton
+                android:id="@+id/add_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/orange"
+                app:fab_colorNormal="@color/orange"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_menu"
+                app:fab_size="mini"
+                app:fab_title="Add video" />
+
+            <com.getbase.floatingactionbutton.AddFloatingActionButton
+                android:id="@+id/add_teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/orange"
+                app:fab_colorNormal="@color/orange"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_menu"
+                app:fab_size="mini"
+                app:fab_title="Add teaching" />
+
+            <com.getbase.floatingactionbutton.AddFloatingActionButton
+                android:id="@+id/add_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/orange"
+                app:fab_colorNormal="@color/orange"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_menu"
+                app:fab_size="mini"
+                app:fab_title="Share Youtube video" />
+
+            <com.getbase.floatingactionbutton.AddFloatingActionButton
+                android:id="@+id/add_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/orange"
+                app:fab_colorNormal="@color/orange"
+                app:fab_colorPressed="@color/white"
+                app:fab_icon="@drawable/ic_menu"
+                app:fab_size="mini"
+                app:fab_title="Add events" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/priest_nav_drawer"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context="dev.simon.UserDashboard.Payments.DonateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount you wish to send: "
+        android:textSize="15sp"
+        android:textColor="@color/violet"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/send_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount: "
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_money"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/blue"
+        android:text="LIPA NA MPESA"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/violet"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/blue"
+        android:text="PAYPAL"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pay_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/blue"
+        android:text="CARD"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".PrivacyTerms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We respect your privacy"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textColor="@color/violet"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_updates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check1"
+            android:textColor="@color/red"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check2"
+            android:textColor="@color/red"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/acc_terms"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Accept"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/violet"
+            app:strokeWidth="1.5dp" />
+
+    </LinearLayout>
+
+</ScrollView>

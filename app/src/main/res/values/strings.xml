@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Behold</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="graveyard">Oh, \'cause I keep diggin\' myself down deeper I won\'t stop \'til I get where you are I keep running, I keep running, I keep running</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!</string>
+    <string name="phone_error_txt">Enter a valid number!</string>
+    <string name="check2">I hereby agree to the terms and conditions and confirm that I\'m at least 16 years old.</string>
+    <string name="check1">Yes, please keep me updated on news, events and offers such as discounts</string>
+    <string name="privacy">We promise not to share your personal data with any third party. \n\n\tWe are GDPR compliant. \n\nYou have control of your data and can delete it at any time. We only save your data in order to improve your experience with the app. \n\n\tWe collaborate with third parties such as Google Analytics in order to do so. \n\n\n\t\tCheck out our Terms of Condition and Privacy Policy</string>
+    <string name="log_error">The above user has no current record. Please check your credentials and try again.</string>
+
+
+</resources>

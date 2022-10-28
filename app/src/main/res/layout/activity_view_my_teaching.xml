@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.simon.PriestDashboard.ViewActivities.ViewMyTeaching">
+
+    <RelativeLayout
+        android:id="@+id/rel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/my_tea_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edit_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/orange"
+        android:text="Edit"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_tea">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/my_tea_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Topic"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+            <TextView
+                android:id="@+id/my_tea_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sub"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/violet"/>
+
+            <TextView
+                android:id="@+id/my_tea_verse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Verses"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/my_tea_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/remove_tea"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/orange"
+                android:text="Remove Teaching"
+                app:cornerRadius="15dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

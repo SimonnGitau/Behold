@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="305dp">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/tea_bg"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/pray"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_more_vert"
+                app:tint="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:cardBackgroundColor="#C4FFFFFF"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/view_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/love_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_alignTop="@+id/teach_ps"
+                        android:layout_alignBottom="@+id/teach_sb"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:id="@+id/tea_love"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/love"
+                            app:tint="@color/red"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/teach_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.1k"
+                            android:textColor="@color/red"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/teach_ps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/love_ll"
+                        android:fontFamily="cursive"
+                        android:text="\@Pst. Kim Kim"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/teach_tp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teach_ps"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/love_ll"
+                        android:text="Character development"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/teach_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teach_tp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/love_ll"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Developing a character with God"
+                        android:textColor="@color/violet"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/teach_vrs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teach_sb"
+                        android:layout_alignParentStart="true"
+                        android:text="Ezekiel 3: 26"
+                        android:textColor="@color/orange"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/teach_ds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teach_vrs"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="@string/lorem"
+                        android:textColor="@color/violet"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

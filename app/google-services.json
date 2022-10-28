@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314583490981",
+    "project_id": "behold-ffdb4",
+    "storage_bucket": "behold-ffdb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314583490981:android:242311c8102dd66496884c",
+        "android_client_info": {
+          "package_name": "dev.simon.behold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314583490981-noddk2uk5hvognjff3to3ivvhvoic434.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD57ha0pfQmMIB-4sGnais_DBFJ10yKakY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314583490981-noddk2uk5hvognjff3to3ivvhvoic434.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

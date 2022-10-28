@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.simon.behold">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Behold.Light"
+        tools:replace="android:icon"
+        tools:targetApi="31">
+        <activity
+            android:name="dev.simon.UserDashboard.Payments.PurchaseVideoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.WatchFullActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.EditProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.YouFullActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.ViewActivities.ViewMyYoutubeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.EditActivities.EditYou"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.EditActivities.EditEvent"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.ViewActivities.ViewMyEvent"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.EditActivities.EditTea"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.ViewActivities.ViewMyTeaching"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.PriestDashboard.EditActivities.EditVideo"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.Authenticate.VerifyOTP"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.Authenticate.UpdateProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PrivacyTerms"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="dev.simon.UserDashboard.Payments.CreditCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.UserDashboard.Payments.PaypalActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.UserDashboard.Payments.DonateActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.PriestDashboard.PriestDashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.TeachViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.EventViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.PriestDashboard.Activities.AddYTVideoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.Authenticate.CreateChannelAccount"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.PriestDashboard.Activities.AddTeachingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.PriestDashboard.Activities.AddEventActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.PriestDashboard.ViewActivities.PlayMyVideoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.PriestDashboard.Activities.AddVideoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.VideoPlayActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.UserDashboard.Activities.PriestProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PriestHomeDash" />
+        <activity
+            android:name="dev.simon.UserDashboard.UserDashActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.Authenticate.PassResetActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.Authenticate.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name="dev.simon.Authenticate.SignUpActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

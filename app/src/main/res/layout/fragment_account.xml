@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context="dev.simon.UserDashboard.Fragments.AccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="10dp"
+            app:strokeColor="@color/violet"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/notif_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_more_vert"
+                app:tint="@color/blue"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/violet"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cv"
+            app:strokeWidth="1dp">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="65dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/violet"
+                android:text="Manage Account"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:strokeWidth="1dp"
+                    android:layout_weight="1"
+                    app:strokeColor="@color/violet"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cornerRadius="10dp"
+                        android:text="Edit Profile"
+                        app:backgroundTint="@color/white"
+                        android:textColor="@color/blue"
+                        app:icon="@drawable/account"
+                        app:iconSize="40dp"
+                        app:iconTint="@color/blue"
+                        app:iconGravity="start"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeWidth="1dp"
+                    android:layout_weight="1"
+                    app:strokeColor="@color/violet"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/log_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:cornerRadius="10dp"
+                        android:text="Logout"
+                        app:backgroundTint="@color/white"
+                        android:textColor="@color/orange"
+                        app:icon="@drawable/logout"
+                        app:iconSize="40dp"
+                        app:iconTint="@color/orange"
+                        app:iconGravity="start"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/violet"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/del_acc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="10dp"
+                    android:text="Delete account"
+                    app:backgroundTint="@color/white"
+                    android:textColor="@color/red"
+                    app:icon="@drawable/delete"
+                    app:iconSize="40dp"
+                    app:iconTint="@color/red"
+                    app:iconGravity="start"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/violet"
+                android:text="Behold centre"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/violet"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/to_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="10dp"
+                    android:text="Settings"
+                    app:backgroundTint="@color/white"
+                    android:textColor="@color/blue"
+                    app:icon="@drawable/ic_settings"
+                    app:iconSize="40dp"
+                    app:iconTint="@color/blue"
+                    app:iconGravity="start"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

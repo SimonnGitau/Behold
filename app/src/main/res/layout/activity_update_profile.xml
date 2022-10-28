@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.simon.Authenticate.UpdateProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Username:"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/violet" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/blue"
+            app:counterTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field needed!"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Gender:"
+            android:textColor="@color/violet"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="2dp">
+
+            <Spinner
+                android:id="@+id/custom_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:dropDownSelector="@color/orange"
+                android:gravity="center_vertical"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/gender_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field needed!"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/phn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Phone:"
+            android:layout_margin="5dp"
+            android:textColor="@color/violet"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            app:ccpDialog_cornerRadius="15dp" />
+
+        <TextView
+            android:id="@+id/country_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field needed!"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/white"
+                    android:inputType="phone"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/phone_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field needed!"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="5dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/violet"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Done"
+            android:textColor="@color/orange"
+            app:rippleColor="@color/orange"
+            android:textSize="11sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

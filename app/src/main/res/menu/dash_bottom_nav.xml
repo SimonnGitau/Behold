@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/icons_event"/>
+
+    <item
+        android:id="@+id/teachings"
+        android:title="Teachings"
+        android:icon="@drawable/teaching"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/videos"
+        android:title="Watch"
+        android:icon="@drawable/video1"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/account"/>
+
+
+</menu>

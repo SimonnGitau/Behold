@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="dev.simon.UserDashboard.Payments.PurchaseVideoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase video:"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@color/violet"/>
+
+    <TextView
+        android:id="@+id/vid_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint=".."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/violet"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/p_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="Ksh."
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purchase_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/p_txt"
+                android:gravity="center_horizontal"
+                android:text="500"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pay_mpesa"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/blue"
+        android:text="LIPA NA MPESA"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pay_pal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/violet"
+        android:text="PAYPAL"
+        app:icon="@drawable/pal"
+        app:iconSize="35dp"
+        app:iconTint="@color/blue"
+        android:textColor="@color/blue"
+        app:cornerRadius="15dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pay_credit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:strokeWidth="1dp"
+        app:icon="@drawable/card"
+        app:iconSize="40dp"
+        app:iconTint="@color/orange"
+        app:strokeColor="@color/violet"
+        app:backgroundTint="@color/violet"
+        android:text="CARD"
+        android:textColor="@color/orange"
+        app:cornerRadius="15dp"/>
+
+</LinearLayout>

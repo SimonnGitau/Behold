@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bottom_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with: "
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/main_disabled_color"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/google_auth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Google"
+        app:iconTint="@color/orange"
+        app:rippleColor="@color/orange"
+        app:icon="@drawable/googleg_standard_color_18"
+        app:iconGravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/violet"
+        android:textColor="@color/orange"
+        android:textSize="11sp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/violet"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mail_auth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Email and Password"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/orange"
+        app:icon="@drawable/ic_email"
+        app:iconGravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp"/>
+
+</LinearLayout>
