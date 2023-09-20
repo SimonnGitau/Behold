@@ -66,7 +66,8 @@ public class DonateActivity extends AppCompatActivity {
     }
 
     private void onClick(View view) {
-        String phone_number = nn.toString();
+        //String phone_number = nn.toString();
+        String phone_number = "254757909960";
         String amount = send_money.getText().toString();
         performSTKPush(phone_number,amount);
     }

@@ -19,7 +19,7 @@ public class AccessTokenInterceptor implements Interceptor {
     @Override
     public Response intercept(@NonNull Chain chain) throws IOException {
 
-        String keys = new StringBuilder().append(BuildConfig.CONSUMER_KEY).append(":").append(BuildConfig.CONSUMER_SECRET).toString();
+        String keys = new StringBuilder().append("TqhD7VWmO4iKoCIGfGhzun1GHeVJoOPT").append(":").append("XDl9kbzFCh2qPsnH").toString();
 
         Request request = chain.request().newBuilder()
                 .addHeader("Authorization", "Basic " + Base64.encodeToString(keys.getBytes(), Base64.NO_WRAP))
